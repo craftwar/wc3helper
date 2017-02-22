@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22BF4326-E9DF-4BA4-B284-98EA304BF13A}"
+	ProjectSection(SolutionItems) = preProject
+		koala's WC3 helper build rar.bat = koala's WC3 helper build rar.bat
+		TODO.txt = TODO.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "koala's WC3 helper", "koala's WC3 helper\koala's WC3 helper.vcxproj", "{D0C2ADC8-1F54-4A10-9753-6C638CECA581}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hook", "hook\hook.vcxproj", "{2CB466DB-9999-4A0E-84E1-FE946081F6AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ping", "ping\ping.vcxproj", "{216E823A-18CE-4954-B3EB-6DC020F59D41}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		rar|Win32 = rar|Win32
+		Release|Win32 = Release|Win32
+		static|Win32 = static|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.Debug|Win32.Build.0 = Debug|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.rar|Win32.ActiveCfg = rar|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.rar|Win32.Build.0 = rar|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.Release|Win32.ActiveCfg = Release|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.Release|Win32.Build.0 = Release|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.static|Win32.ActiveCfg = static|Win32
+		{D0C2ADC8-1F54-4A10-9753-6C638CECA581}.static|Win32.Build.0 = static|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.Debug|Win32.Build.0 = Debug|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.rar|Win32.ActiveCfg = rar|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.rar|Win32.Build.0 = rar|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.Release|Win32.ActiveCfg = Release|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.Release|Win32.Build.0 = Release|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.static|Win32.ActiveCfg = static|Win32
+		{2CB466DB-9999-4A0E-84E1-FE946081F6AF}.static|Win32.Build.0 = static|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.Debug|Win32.Build.0 = Debug|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.rar|Win32.ActiveCfg = Release|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.rar|Win32.Build.0 = Release|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.Release|Win32.ActiveCfg = Release|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.Release|Win32.Build.0 = Release|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.static|Win32.ActiveCfg = Release|Win32
+		{216E823A-18CE-4954-B3EB-6DC020F59D41}.static|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

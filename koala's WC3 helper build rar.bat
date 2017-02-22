@@ -1,0 +1,3 @@
+cd\"Documents and Settings\koala\My Documents\Visual Studio 2008\Projects\koala's WC3 helper\Release\"
+; "C:\Program Files\WinRAR\rar" a -m5 -agYYYY.MM.DD "%USERPROFILE%\орн▒\koala_WC3_helper.rar" tool *.exe *.dll *.xml *.txt static\*.exe static\*.dll static\*.xml
+"C:\Program Files\WinRAR\rar" a -m5 -agYYYY.MM.DD "%USERPROFILE%\desktop\koala_WC3_helper.rar" tool *.exe *.dll *.xml *.txt static\*.exe static\*.dll static\*.xml
