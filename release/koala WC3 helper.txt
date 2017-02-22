@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+ <Chat v="1"/>
+ <HP v="3"/>
+ <FastGameDelay v="3000"/>
+<!--程式內建功能熱鍵設定-->
+<Fnkey>
+ <Suspend modifiers="0" key="7B"/>
+ <Pastebot_load modifiers="0" key="77"/>
+ <Pastebot_send modifiers="0" key="77"/>
+ <FastJoinGame modifiers="1" key="72"/>
+ <FastPublicGame modifiers="1" key="75"/>
+ <FastPrivateGame modifiers="1" key="76"/>
+</Fnkey>
+ <Mapkey_number number="8"/>
+<!--
+下面是亂搞的範例，可以隨意加comment/attribute，
+改attribute名字，但attribute順序不可改
+-->
+ <Mapkey modifiers="0" key="5B" target="" comment="把左winodws鍵關掉"/>
+ <Mapkey modifiers="0" key="5C" t=""/>
+ <Mapkey modifiers="0" key="5F" asdjls=""/>
+ <Mapkey modifiers="0" key="38" vdnajkz="{67}"/>
+ <Mapkey modifiers="0" k="39" target="{68}"/>
+ <Mapkey modifiers="0" ey="30" target="{65}"/>
+ <Mapkey modifiers="0" kasdy="7A" target="{0D}可以用中文喔{0D}{0D}日本語もいいよ{0D}"/>
+ <Mapkey rs="0" key="76" target="{0D}-di{0D}"/>
+</Settings>

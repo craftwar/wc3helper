@@ -1,0 +1,39 @@
+改版時，本檔案沒修改就表示對使用者沒啥差別，可不換新版本 (可能只改說明或設定檔)
+有加新功能請注意設定檔有無新設定，沒補上後果自負
+
+2010. 4.11
+Manifest加上UAC設定 (Vista以後使用者才有差)
+
+2010. 1.23
+update latency reducer for 1.24d
+
+2010. 1.15
+RunWar3
+	增加保持4:3視窗設定參數keepRatio
+	x, y 設定參數為-1時會自動置中
+
+
+2009. 12.4
+update latency reducer for 1.24c
+
+2009. 10.10
+修正parse bug(順便簡化code)
+
+2009. 9. 26
+增加修改1.24b Netowork latency的功能(latency reducer跟W3DR一樣的功能)
+
+2009. 8. 22
+修正一個啟動bug (RunWar3 v="0")
+Fnkey小bug
+War3關掉重開可以不用重開koala's WC3 helper
+
+支援War3多開 (有bug，要照順序)
+1)開war3 2)開helper 3)開war3  4)helper選find war3
+只支援鎖滑鼠和熱鍵
+
+
+2009. 8. 2
+PasteBot修正
+	可在遊戲中貼上 (Enter, paste, Enter) 再paste前多加個Enter
+	限制只會有一個load dialog
+	PasteUtf8修正 (length <=0 直接 return)

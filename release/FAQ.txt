@@ -1,0 +1,20 @@
+Q: antivirus warning?
+A: This program use WH_KEYBOARD_LL Hook, antivirus may think it's suspicious file.
+   You may need add this program to exception to work properly.
+
+Q: How to run Warcraft in window mode?
+A: append the -window parameter to the end of the shortcut target
+   ex: "D:\Warcraft III\war3.exe" -window
+
+Q: How to show health bars?
+A: after 1.22, war3 has this function built-in.
+   Options->Gameplay->Always show Health Bars
+
+
+Q: Why do I see spaces in chat?
+A: You need change WC3 fonts to unicode font to see all different country characters at the same time,
+   or ppl just input space only.
+
+
+Q: How do I use special words in game name?
+A: Type in game chat and then copy & paste in game name. (ctrl+c, ctrl+v) 

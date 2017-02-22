@@ -1,0 +1,56 @@
+my WC3 collection page
+http://koalafile.googlepages.com/koala'sfiles
+
+
+
+對ggc的P2P機制猜測
+如果直接連host H要300ms
+連到A需100ms，A連到host H需100ms
+那麼透過A連到host H就只要200ms(100+100)< 原本的300ms，時間自然減少了 (ggc的tunnel功能)
+會耗用較多頻寬的猜測，同時送封包給host H和A，host先收到的就採用
+對於台灣的使用者，幾乎不會因為P2P受益 (台灣電腦間的ping通常都在80~100ms或更低，幾乎沒差)
+
+
+
+ggc唯一的好處是可以看到ping以及區網latency為100ms
+不用令外找程式看ping和調latency (但是ping 200以下似乎都顯示為1條線...)
+缺點是會被偷用頻寬，host出問題，遊戲直接掰 (Bnet可能是隨機或選下一個玩家當host，選中的無法當host才掰)
+在Bnet玩，使用程式改latency，可能會比用ggc順 (因為沒有ggc的額外負擔)
+latency改低未必是件好事，詳情請參照PTT 減少自定遊戲延遲 討論串
+
+
+
+		WC3Banlist
+
+http://tw.gg-game.com/forum/read.php?tid=114255
+
+沒在當host的也建議使用，game start或是有人whisper都會有音效，掛網開著很好用
+
+在自訂遊戲可以拿來查ping (dota 150~200以上就不能玩了)
+3.1 beta 210後，host建議用/latall 不建議用/pingall (icmp大多都被防火牆擋掉了...)
+/fromall可以查國家，過濾外國人，也不用安來安去的，很蠢，很浪費時間檢查
+
+
+
+		BlackBook
+
+http://desc.se/blackbook/
+
+在WC3Banlist停止更新後的令一個產物吧...
+
+懶
+
+只說特別的地方
+
+可自動過濾國家 (應該是利用ip2c)
+支持lua script (能幹麻，我也不知道....)
+
+
+
+Bnet幾個人有圖決定最多地圖下載人數
+Lan game是例外，只會跟host要圖 (ggc一樣)
+
+
+改圖，檔名要改
+不改檔名的，會跟原圖衝突，也是不尊重原作者的行為
+中文化檔名，繁體版請加TW或CHT，簡體版加CN或CHS

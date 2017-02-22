@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>	
+<!--comment 這是註解
+this configuration is for function demonstration, modify it before use
+預設設定檔主要是說明功能用，使用前最好先修改
+限用UTF-8編碼，否則會出錯
+-->
+
+<Settings>
+
+<!-- 執行
+WC3Banlist 	查國家, ping, 掛網好用
+Dota Client 	anti-cheat, reduce latency
+W3DR	   	最有名的反延遲 (reduce latency)
+
+ <Run v='"C:\Program Files\WC3Banlist\WC3Banlist.exe"'/>
+ <Run v='"C:\Program Files\DotA Gaming Network\DotAClient.exe"'/>
+ <Run v='"W3DR.exe"'/>
+-->
+ <RunWar3 v="2" ChangeExistingWindow="1" OnTop="0" x="-1" y="-1" keepRatio="1" width="-1" height="-1"/>
+ <Network_latency v="0"/>
+ <Chat v="1"/>
+ <FastGameDelay v="3000"/>
+ <Pastebot_delay v="500"/>
+
+<Fnkey>
+<!--
+F12		切換開關
+Ctrl + F2	隱藏/還原War3視窗(Boss鍵)
+-->
+ <Suspend modifiers="0" key="7B"/>
+ <Hide_War3 modifiers="1" key="7B" close_helper="0"/>
+<!--
+F8		PasteBot
+-->
+ <Pastebot_load modifiers="0" key="77"/>
+ <Pastebot_send modifiers="0" key="77"/>
+<!--
+Ctrl + F3	快速加入遊戲
+Ctrl + F6	快速公開遊戲
+Ctrl + F7	快速私人遊戲
+-->
+ <FastJoinGame modifiers="1" key="72"/>
+ <FastPublicGame modifiers="1" key="75" ob="0" vis="0" create="1"/>
+ <FastPrivateGame modifiers="1" key="76" vis="0"/>
+</Fnkey>
+
+<!--
+Mapkey_number can't be less than number of Mapkey
+Mapkey_number 不能設的比實際使用的數量少，可能會爆炸，設多浪費記憶體而已
+如果跟Fnkey衝突，只有Fnkey作用
+
+disable LWIN,RWIN,SLEEP (5B 5C 5F)	關掉按鍵
+7, 8  ->NumPad 7, 8
+
+Ctrl + f11 	multi-language output demo
+CTRL+F5		/fromall (WC3Banlist country query)
+F6		/latall  (WC3Banlist latency query)
+F7		推廣用按鍵
+F5		Battle.net 查看台灣正規Clan channel
+F9, Ctrl + F9  	minimap ping enable/disable
+Alt+G		Allstars專用，使用Glyph of Fortification (要先用Ctrl+0 把 Circle of Power編隊)
+F11 		安	(台灣人常用的國家過濾方法，不說就被踢)
+-->
+
+ <Mapkey_number number="14"/>
+
+ <Mapkey modifiers="0" key="5B" target=""/>
+ <Mapkey modifiers="0" key="5C" target=""/>
+ <Mapkey modifiers="0" key="5F" target=""/>
+ <Mapkey modifiers="0" key="7A" target="安{0D}"/>
+ <Mapkey modifiers="0" key="37" target="{67}"/>
+ <Mapkey modifiers="0" key="38" target="{68}"/>
+ <Mapkey modifiers="2" key="47" target="{30}{46}{70}">
+ <Mapkey modifiers="1" key="7A" target="{0D}可以用中文喔{0D}{0D}日本語もいいよ{0D}"/>
+ <Mapkey modifiers="1" key="74" target="/fromall{0D}"/>
+ <Mapkey modifiers="0" key="75" target="/latall{0D}"/>
+ <Mapkey modifiers="0" key="76" target="{0D}無尾熊的WC3頁面http://0rz.tw/814Go{0D}"/>
+ <Mapkey modifiers="0" key="74" target="/who clan bady{0D}/who clan ft{0D}"/>
+ <Mapkey modifiers="0" key="78" target="{0D}/hideminimapsignals{0D}"/>
+ <Mapkey modifiers="1" key="78" target="{0D}/showminimapsignals{0D}"/>
+
+</Settings>

@@ -1,0 +1,155 @@
+OpenFoundry專案頁面
+http://of.openfoundry.org/projects/1274
+徵求協助者 (程式, 熱鍵設定建議, icon, 網頁, 設定檔設定程式...etc)
+
+
+
+系統需求
+
+XP以後系統 (Vista請用管理員權限執行)
+
+MSXML6 (Windows update會裝到)
+
+Microsoft Visual C++ 2008 SP1 Redistributable Package
+	http://www.microsoft.com/downloads/details.aspx?displaylang=zh-tw&FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2
+或使用static目錄中檔案取代原檔案 (不用裝 Visual C++ 2008 SP1 runtime，只建議在網咖使用)
+
+
+
+設定檔為koala's WC3 helper.xml (不可更名，檔案編碼請用UTF-8，記事本令存新檔編碼選UTF-8)
+
+xml可以隨意加comment/attribute，改attribute名字，但attribute順序不可改 (看不懂就別管了，進階用法)
+亂搞設定檔方法參考koala's WC3 helper.txt，還是不懂就去翻一下xml的文件吧
+
+
+
+Run
+	執行程式
+	把捷徑"目標"欄位的值丟進去就可以了，雙引號(")最好要保留，以避免發生意外
+	這裡的attribute放在單引號(')裡會比較方便，不用去escape double quote(")
+	如果都會用到，自己去參考XML文件看怎麼處理吧
+
+
+RunWar3
+	v	War3不存在時是否執行
+	0	no
+	1	full screen
+	2	window mode
+
+	ChangeExistingWindow 遊戲已存在是否做變動(位置、大小，視窗化才有效)
+
+	onTop	最上層顯示
+
+	x="0" y="0" 視窗位置座標 (左上角)
+	-1	自動置中
+
+	keepRatio	視窗大小是否改成適合遊戲的4:3(視窗化才有效)
+	0	不改變比例
+	1	保持長度下改成4:3
+
+	width="1024" height="768" 視窗大小，都設-1最大化
+
+
+Network_latency
+	改變latency(跟DR一樣的功能，只有Battle.net有效)
+	未修改時Battle.net為250ms，Lan為100ms
+	需在開地圖前先開本程式才有效
+	設0為不修改，War3改版時請先設0停用本功能
+	全部台灣玩家時，建議數值100~150，有國外玩家時請調高
+
+
+
+Chat
+	輸入輔助功能
+	0 off
+	1 on
+
+
+RestrictMouse
+	自動偵測，限制滑鼠在War3視窗中 (War3 window mode才開)
+	支援多開
+
+
+FnKey
+	功能鍵，不想用的就設key=""吧
+
+Suspend
+	切換開關 (熱鍵是否有效  程式會自動偵測輸入法切換，自動開關)
+
+
+Hide_War3
+	隱藏/還原War3視窗，
+	close_helper 隱藏時是否關掉koala's WC3 helper
+	程式啟動時會自動還原War3視窗
+
+
+FastGame
+	快速開/加入Game，要先ctrl+c複製好game name
+
+FastPublicGame
+	O (Observers)
+	0 No Observers
+	1 Full Observers
+	2 Refrees
+
+	create 送出alt+c
+
+	vis (Visibility)
+	0 Default
+	1 Always Visible
+
+FastPrivateGame
+	程式內定Refrees
+
+
+FastGameDelay
+	單位為ms，自行依電腦速度調整預設3000
+
+
+Paste_bot
+	檔案要存成UTF-8 (記事本中，令存新檔  編碼UTF-8)
+	把檔案的內容在War3中送出
+	要注意War3每行長度有限制
+	Pastebot_load	選擇要load的檔案
+	Pastebot_send	      send
+	Pastebot_delay	送出時每行間隔時間 ms
+	應用:
+	介紹map/教玩法，貼加入部族規則，貼歌詞，貼小說？
+
+
+Mapkey
+	<Mapkey_number number="3"/>  熱鍵數量 (數量設少，可能會爆炸，設多只會浪費memory)
+
+modifier
+	ctrl 1
+	alt 2
+	shift 4
+
+
+key 啟動按鍵，target是對應到的鍵或文字，關掉按鍵設target=""
+在target使用按鍵要寫在{}裡面，文字不用，可混用按鍵和文字(各國語言ok)
+
+按鍵要用virtual key code (請查表，用16進位)
+避免違反MSDN的使用合約，請上網去查
+http://msdn.microsoft.com/en-us/library/dd375731(VS.85).aspx
+
+MSDN path避免位址修改
+MSDN Library -> Win32 and COM Development -> Keyboard Input Reference -> Constants -> Virtual-Key Codes
+
+
+
+
+有問題請在PTT或OpenFoundry反映
+
+
+
+
+
+known issue
+
+MSXML內部使用UCS-2(接近UTF-16但不一樣)，某些字可能會無法顯示
+
+啟動時最大化，限制滑鼠可能會錯誤，請切到別的視窗再切回來
+
+多開鎖滑鼠使用程序 (應該是war3設計問題，可能無解)
+1)開war3 2)開helper 3)切進war3 4)開第2個war3  5)helper選find war3 6)切進新開的war3  要再開? 從4)開始重複
